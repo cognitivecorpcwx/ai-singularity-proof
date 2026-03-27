@@ -1,0 +1,6 @@
+# Python dependencies for code/singularity_proof.py and code/historical_comparison.py
+# Install: pip install -r requirements.txt
+
+numpy>=1.24.0
+scipy>=1.11.0
+matplotlib>=3.7.0

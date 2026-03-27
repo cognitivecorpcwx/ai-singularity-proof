@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+title: "The Singularity Is Here: An Evidence-Based Argument"
+message: "If you use this research, please cite it as below."
+type: dataset
+authors:
+  - given-names: James
+    family-names: Waddell
+    email: bob@cognitivewx.info
+    affiliation: Cognitive Corp
+    orcid: ""
+date-released: "2026-03-27"
+version: "2.0"
+license: CC-BY-4.0
+url: "https://github.com/cognitivecorpcwx/ai-singularity-proof"
+repository-code: "https://github.com/cognitivecorpcwx/ai-singularity-proof"
+keywords:
+  - artificial intelligence
+  - singularity
+  - phase transition
+  - benchmark analysis
+  - curve fitting
+  - hypothesis testing
+  - falsification
+  - built environment
+  - AI governance
+abstract: >-
+  A multi-layered evidentiary package arguing that AI has entered a rapid,
+  self-reinforcing phase transition that meets the majority of singularity
+  criteria. Built across six independent layers of evidence — narrative
+  argument, quantitative proof, adversarial analysis, prediction registry,
+  historical comparison, and a live falsification engine — and published
+  alongside two formal independent adversarial reviews. Includes 65 data
+  points across 7 benchmark domains, curve fitting with AIC model selection,
+  Fisher's combined probability analysis, 20 timestamped falsifiable
+  predictions, and a built environment lifecycle impact analysis covering
+  14 stakeholder groups across 7 lifecycle phases.
+references:
+  - type: report
+    title: "The AI Index 2025 Annual Report"
+    authors:
+      - given-names: Nestor
+        family-names: Maslej
+    year: 2025
+    institution:
+      name: Stanford Institute for Human-Centered AI
+    url: "https://hai.stanford.edu/ai-index/2025-ai-index-report"
+  - type: article
+    title: "Densing Law of LLMs"
+    authors:
+      - given-names: Guangxuan
+        family-names: Xiao
+    year: 2025
+    journal: Nature Machine Intelligence
+    doi: "10.1038/s42256-024-00936-7"
+  - type: article
+    title: "Highly accurate protein structure prediction with AlphaFold"
+    authors:
+      - given-names: John
+        family-names: Jumper
+    year: 2021
+    journal: Nature
+    volume: 596
+    start: 583
+    end: 589
+    doi: "10.1038/s41586-021-03819-2"

@@ -52,9 +52,9 @@ Three additional proof structures:
 **[Adversarial Review #2: S-Curve Fallacy & Historical Comparison](docs/Adversarial_Review_2_S_Curve_Fallacy.md)** — Challenges the S-curve-as-phase-transition interpretation and the 13x historical speed comparison. The historical comparison critique (apples-to-oranges: benchmark scores vs. physical infrastructure deployment) was accepted and incorporated as expanded caveats.
 
 ### Layer 6: Live Falsification Engine
-**[Singularity Tracker](singularity-tracker/)**
+**Singularity Tracker** (root-level Next.js app: `app/`, `components/`, `lib/`, `data/`)
 
-A Next.js dashboard that continuously tests the singularity thesis against incoming data. Each domain has an explicit falsification condition — add a new benchmark result, and the curve fits, acceleration tests, and Fisher's combined statistic recompute automatically. The tracker reimplements the Python analysis pipeline in TypeScript for live, browser-based re-analysis. See the [tracker's own README](singularity-tracker/README.md) for architecture, API docs, and setup instructions.
+A Next.js dashboard that continuously tests the singularity thesis against incoming data. Each domain has an explicit falsification condition — add a new benchmark result, and the curve fits, acceleration tests, and Fisher's combined statistic recompute automatically. Includes pages for domain deep-dives, data entry, historical technology comparison, built environment impact matrix, and adversarial review panels. Run with `npm install && npm run dev`.
 
 ---
 
@@ -70,13 +70,16 @@ Maps the singularity evidence onto every entity involved in built environment li
 
 All analysis code is in the [`code/`](code/) directory:
 
-- **`singularity_proof.py`** — Curve fitting, derivative analysis, hypothesis testing, chart generation. Requires Python 3, NumPy, SciPy, Matplotlib.
+- **`singularity_proof.py`** — Curve fitting, derivative analysis, hypothesis testing, chart generation.
+- **`kendall_tau_reanalysis.py`** — Independent Kendall's tau acceleration/deceleration test with leave-one-out and jitter robustness checks. Reproduces Adversarial Review #1 methodology.
 - **`historical_comparison.py`** — Historical transition comparison chart generation.
 - **`data/analysis_results.json`** — Structured output from the quantitative analysis.
+- **`data/DATA_PROVENANCE.md`** — Source URLs, access dates, and known issues for every data point.
 
 ```bash
-pip install numpy scipy matplotlib
+pip install -r requirements.txt
 python code/singularity_proof.py
+python code/kendall_tau_reanalysis.py
 python code/historical_comparison.py
 ```
 

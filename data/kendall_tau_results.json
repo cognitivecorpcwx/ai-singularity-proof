@@ -1,0 +1,79 @@
+{
+  "per_domain": {
+    "mmlu": {
+      "tau": -0.4444444444444444,
+      "p_two_sided": 0.11943893298059964,
+      "p_decel": 0.05971946649029982,
+      "n_rates": 9,
+      "direction": "decelerating"
+    },
+    "gpqa": {
+      "tau": -0.33333333333333337,
+      "p_two_sided": 0.3813492063492063,
+      "p_decel": 0.19067460317460316,
+      "n_rates": 7,
+      "direction": "decelerating"
+    },
+    "swebench": {
+      "tau": -0.23809523809523814,
+      "p_two_sided": 0.5619047619047619,
+      "p_decel": 0.28095238095238095,
+      "n_rates": 7,
+      "direction": "decelerating"
+    },
+    "humaneval": {
+      "tau": -1.0,
+      "p_two_sided": 0.0003968253968253968,
+      "p_decel": 0.0001984126984126984,
+      "n_rates": 7,
+      "direction": "decelerating"
+    },
+    "arcagi2": {
+      "tau": 0.5270462766947298,
+      "p_two_sided": 0.206507295485425,
+      "p_decel": 0.8967463522572875,
+      "n_rates": 5,
+      "direction": "accelerating"
+    },
+    "cost": {
+      "tau": -0.9047619047619049,
+      "p_two_sided": 0.002777777777777778,
+      "p_decel": 0.001388888888888889,
+      "n_rates": 7,
+      "direction": "decelerating"
+    },
+    "compute": {
+      "tau": -0.036369648372665396,
+      "p_two_sided": 0.9007802600472398,
+      "p_decel": 0.4503901300236199,
+      "n_rates": 8,
+      "direction": "decelerating"
+    }
+  },
+  "combined": {
+    "capability_domains": {
+      "chi2": 28.7579957403119,
+      "df": 10,
+      "p_value": 0.0013635152862795374,
+      "significant_005": true
+    },
+    "all_domains": {
+      "chi2": 43.511780396729456,
+      "df": 14,
+      "p_value": 7.093000080315992e-05,
+      "significant_005": true
+    }
+  },
+  "robustness": {
+    "leave_one_out": {
+      "min_p": 0.00079220358523302,
+      "max_p": 0.0056050207662474705,
+      "n_tests": 40
+    },
+    "jitter": {
+      "n_simulations": 1000,
+      "jitter_sd": 1.0,
+      "fraction_significant": 0.896
+    }
+  }
+}
