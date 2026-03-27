@@ -1,0 +1,255 @@
+{
+  "mmlu": {
+    "label": "MMLU (Best Model Score)",
+    "n": 10,
+    "loo_model_selection": {
+      "full_sample_best": "Logistic",
+      "stability": 0.9,
+      "loo_models": [
+        "Logarithmic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 1.6472,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 2.35,
+      "max_absolute_error": 11.997,
+      "median_absolute_error": 1.255,
+      "n_valid": 10
+    }
+  },
+  "gpqa": {
+    "label": "GPQA Diamond (Best Model)",
+    "n": 8,
+    "loo_model_selection": {
+      "full_sample_best": "Linear",
+      "stability": 0.875,
+      "loo_models": [
+        "Linear",
+        "Linear",
+        "Linear",
+        "Linear",
+        "Logistic",
+        "Linear",
+        "Linear",
+        "Linear"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0003,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 2.836,
+      "max_absolute_error": 5.554,
+      "median_absolute_error": 2.41,
+      "n_valid": 8
+    }
+  },
+  "swebench": {
+    "label": "SWE-bench (Best Agent)",
+    "n": 8,
+    "loo_model_selection": {
+      "full_sample_best": "Logistic",
+      "stability": 0.875,
+      "loo_models": [
+        "Logarithmic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0002,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 3.433,
+      "max_absolute_error": 8.622,
+      "median_absolute_error": 2.954,
+      "n_valid": 8
+    }
+  },
+  "humaneval": {
+    "label": "HumanEval (Best Model)",
+    "n": 8,
+    "loo_model_selection": {
+      "full_sample_best": "Logarithmic",
+      "stability": 0.625,
+      "loo_models": [
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logarithmic",
+        "Logarithmic",
+        "Logarithmic",
+        "Logarithmic",
+        "Logarithmic"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 10.942,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 39.179,
+      "max_absolute_error": 67.543,
+      "median_absolute_error": 51.444,
+      "n_valid": 8
+    }
+  },
+  "arcagi2": {
+    "label": "ARC-AGI-2 (Best System)",
+    "n": 6,
+    "loo_model_selection": {
+      "full_sample_best": "Logistic",
+      "stability": 0.0,
+      "loo_models": [
+        "Linear",
+        "Linear",
+        "Linear",
+        "Exponential",
+        "Linear",
+        "Linear"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 9.192,
+      "max_absolute_error": 40.944,
+      "median_absolute_error": 3.615,
+      "n_valid": 6
+    }
+  },
+  "cost": {
+    "label": "Cost: GPT-3.5 Equivalent ($/M tokens)",
+    "n": 8,
+    "loo_model_selection": {
+      "full_sample_best": "Logistic",
+      "stability": 1.0,
+      "loo_models": [
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 6.9756,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 6.922,
+      "max_absolute_error": 43.774,
+      "median_absolute_error": 1.12,
+      "n_valid": 8
+    }
+  },
+  "compute": {
+    "label": "Training Compute (log10 FLOP)",
+    "n": 9,
+    "loo_model_selection": {
+      "full_sample_best": "Logistic",
+      "stability": 1.0,
+      "loo_models": [
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic",
+        "Logistic"
+      ]
+    },
+    "alt_initialization": {
+      "Exponential": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      },
+      "Logistic": {
+        "convergence_rate": 1.0,
+        "aic_std": 0.0,
+        "n_trials": 10
+      }
+    },
+    "loo_prediction_error": {
+      "mean_absolute_error": 0.154,
+      "max_absolute_error": 0.312,
+      "median_absolute_error": 0.14,
+      "n_valid": 9
+    }
+  }
+}

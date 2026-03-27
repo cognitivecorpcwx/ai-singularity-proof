@@ -58,6 +58,14 @@ A Next.js dashboard that continuously tests the singularity thesis against incom
 
 ---
 
+## Methodology & Sensitivity
+
+**[Statistical Methods and Assumptions](docs/Statistical_Methods_and_Assumptions.md)** — Complete reference for data collection criteria, curve fitting methodology, hypothesis testing approaches, phase transition interpretation, and known limitations. Written for peer reviewers.
+
+**[Sensitivity Analysis](docs/Sensitivity_Analysis.md)** — Leave-one-out model selection stability, alternative initialization testing, and prediction error analysis across all 7 domains. Finding: model selection is stable for 5/7 domains (MMLU, GPQA, SWE-bench, Cost, Compute) and unstable for 2/7 (HumanEval, ARC-AGI-2). Full domain-by-domain interpretation and revised confidence levels.
+
+---
+
 ## Built Environment Impact
 
 **[Built Environment Lifecycle Impact Analysis](docs/Built_Environment_Impact_Analysis.md)**
@@ -73,6 +81,7 @@ All analysis code is in the [`code/`](code/) directory:
 - **`singularity_proof.py`** — Curve fitting, derivative analysis, hypothesis testing, chart generation.
 - **`kendall_tau_reanalysis.py`** — Independent Kendall's tau acceleration/deceleration test with leave-one-out and jitter robustness checks. Reproduces Adversarial Review #1 methodology.
 - **`historical_comparison.py`** — Historical transition comparison chart generation.
+- **`sensitivity_analysis.py`** — Leave-one-out model selection, alternative initialization, prediction error.
 - **`data/analysis_results.json`** — Structured output from the quantitative analysis.
 - **`data/DATA_PROVENANCE.md`** — Source URLs, access dates, and known issues for every data point.
 
@@ -81,6 +90,7 @@ pip install -r requirements.txt
 python code/singularity_proof.py
 python code/kendall_tau_reanalysis.py
 python code/historical_comparison.py
+python code/sensitivity_analysis.py
 ```
 
 ---
@@ -92,6 +102,7 @@ python code/historical_comparison.py
 | Benchmark domains analyzed | 7 |
 | Data points | 65 |
 | Best-fit model (majority) | Logistic S-curve (5/7 domains) |
+| Model selection stable under LOO | 5/7 domains (HumanEval, ARC-AGI-2 unstable) |
 | Fisher's combined p-value | 0.252 |
 | Cost efficiency acceleration | p = 0.008 (significant) |
 | AI transition speed (10% to 90%) | ~3 years |

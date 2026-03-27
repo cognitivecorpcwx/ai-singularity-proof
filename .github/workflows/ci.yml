@@ -29,8 +29,13 @@ jobs:
       - name: Run historical comparison
         run: python code/historical_comparison.py
 
-      - name: Verify kendall_tau_results.json was created
-        run: test -f data/kendall_tau_results.json
+      - name: Run sensitivity analysis
+        run: python code/sensitivity_analysis.py
+
+      - name: Verify output files were created
+        run: |
+          test -f data/kendall_tau_results.json
+          test -f data/sensitivity_results.json
 
   typescript-build:
     runs-on: ubuntu-latest

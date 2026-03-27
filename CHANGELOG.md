@@ -2,6 +2,17 @@
 
 All notable changes to this evidence package are documented here.
 
+## [2.1] — 2026-03-27
+
+### Added
+- **Statistical Methods and Assumptions** (`docs/Statistical_Methods_and_Assumptions.md`) — Complete methodology reference for peer reviewers: data collection criteria, inclusion/exclusion rules, curve fitting assumptions, hypothesis testing approaches, phase transition interpretation, pre-registration limitations, researcher degrees of freedom
+- **Sensitivity Analysis** (`docs/Sensitivity_Analysis.md`, `code/sensitivity_analysis.py`) — Leave-one-out model selection stability, alternative initialization testing, and prediction error analysis. Finding: 5/7 domains stable, HumanEval and ARC-AGI-2 unstable. Revised confidence levels per domain.
+- Sensitivity analysis added to GitHub Actions CI pipeline
+
+### Changed
+- README updated with methodology/sensitivity section, revised statistics table
+- "5/7 logistic" claim contextualized with stability findings
+
 ## [2.0] — 2026-03-27
 
 ### Changed
