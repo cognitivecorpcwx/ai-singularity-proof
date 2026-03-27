@@ -58,6 +58,14 @@ A Next.js dashboard that continuously tests the singularity thesis against incom
 
 ---
 
+## Built Environment Impact
+
+**[Built Environment Lifecycle Impact Analysis](docs/Built_Environment_Impact_Analysis.md)**
+
+Maps the singularity evidence onto every entity involved in built environment lifecycle optimization — from concept through demolition. Covers 14 stakeholder groups (building owners, architects, engineers, contractors, facility managers, property managers, BAS vendors, energy managers, tenants, regulators, insurers, lenders, digital twin providers, and workforce/HR) across all 7 lifecycle phases. Each entity is assessed against the evidence domains with honest strength ratings. Identifies the built environment's structural governance gap and maps Cognitive Corp's framework stack (Building Constitution, BAGI, HMM, AGRF, GATE, AIRS) to specific stakeholder needs.
+
+---
+
 ## Reproducibility
 
 All analysis code is in the [`code/`](code/) directory:
