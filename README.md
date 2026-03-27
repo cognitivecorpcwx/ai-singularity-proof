@@ -45,10 +45,11 @@ Three additional proof structures:
 | ![Fig 4](figures/Figure_4_Statistical_Summary.png) | Statistical summary dashboard |
 | ![Fig 5](figures/Figure_5_Historical_Comparison.png) | Historical comparison: AI vs. prior transitions |
 
-### Independent Adversarial Review
-**[Independent_Adversarial_Review.md](docs/Independent_Adversarial_Review.md)**
+### Independent Adversarial Reviews
 
-A formal adversarial review solicited by the authors and published alongside the thesis. Uses Kendall's tau on local improvement rates (rather than second-derivative t-tests) to independently test acceleration claims. Finds statistically significant deceleration within GPQA (p=0.015), SWE-bench (p=0.035), and HumanEval (p=0.035), with combined p=0.0057 favoring deceleration. Robustness-checked via leave-one-point-out and jitter simulations. Scores Domains 3, 4, and 5 as passing; Domains 1, 2, and 7 as suggestive; Domain 6 as failing. The authors accepted the finding and revised the paper.
+**[Adversarial Review #1: Statistical Reanalysis](docs/Independent_Adversarial_Review.md)** — Uses Kendall's tau on local improvement rates to independently test acceleration claims. Finds statistically significant deceleration within GPQA (p=0.015), SWE-bench (p=0.035), and HumanEval (p=0.035), with combined p=0.0057. Scores Domains 3, 4, 5 as passing; 1, 2, 7 as suggestive; 6 as failing. Authors accepted the finding and revised the paper.
+
+**[Adversarial Review #2: S-Curve Fallacy & Historical Comparison](docs/Adversarial_Review_2_S_Curve_Fallacy.md)** — Challenges the S-curve-as-phase-transition interpretation and the 13x historical speed comparison. The historical comparison critique (apples-to-oranges: benchmark scores vs. physical infrastructure deployment) was accepted and incorporated as expanded caveats.
 
 ### Layer 6: Live Falsification Engine
 **[Singularity Tracker](singularity-tracker/)**
