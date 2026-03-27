@@ -101,7 +101,7 @@ python code/historical_comparison.py
 | Falsifiable predictions registered | 20 |
 | Domains scored "met" | 6/7 |
 | Domains scored "mixed" | 1/7 (Capability Acceleration) |
-| Independent deceleration test (Kendall's tau) | p = 0.006 (combined, favoring deceleration) |
+| Independent deceleration test (Kendall's tau) | p = 0.001 (reproduction) / p = 0.006 (reviewer) |
 
 ---
 

@@ -2,6 +2,10 @@
 Independent Reanalysis: Kendall's Tau Acceleration Test
 ========================================================
 Reproduces the methodology from Adversarial Review #1.
+Note: Our scipy-based reproduction yields different per-domain p-values than
+the reviewer's original analysis (likely due to differences in rate computation
+or tied-rank handling), but the combined conclusion is the same: statistically
+significant deceleration within capability benchmarks.
 
 Instead of second-derivative t-tests (which assume i.i.d. Gaussian residuals),
 this script computes local improvement rates between adjacent observations and

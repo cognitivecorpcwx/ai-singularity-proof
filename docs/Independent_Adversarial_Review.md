@@ -105,6 +105,12 @@ Expert-timeline compression is real: the survey of 2,778 AI researchers estimate
 
 ---
 
+## Reproduction Note
+
+The p-values reported in this review were computed by the independent reviewer using their own implementation. The reproduction code in `code/kendall_tau_reanalysis.py`, which uses scipy's `kendalltau` on the same dataset, produces different per-domain p-values (e.g., GPQA: 0.191 vs. 0.015 reported here) but reaches the same directional conclusion: combined evidence favors deceleration (reproduction combined p = 0.0014 vs. 0.0057 reported here). The discrepancy likely reflects differences in how local improvement rates were computed (interval midpoints vs. endpoint indexing) or different handling of tied ranks. Both analyses independently confirm statistically significant deceleration within capability benchmarks. Readers are encouraged to run `python code/kendall_tau_reanalysis.py` to verify.
+
+---
+
 ## Final Assessment
 
 The thesis, as originally written (7/7 thresholds met, singularity definitively proven), should be rejected. The strongest defensible rewrite — which the authors have now adopted — is: **"AI has entered a rapid, self-reinforcing phase transition that meets the majority of singularity criteria, with capability acceleration and full cognitive parity partially but not fully demonstrated."** That remains a very strong claim, and it has the advantage of being defensible.

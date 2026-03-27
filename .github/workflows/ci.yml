@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run singularity proof analysis
+        run: python code/singularity_proof.py
+
+      - name: Run kendall tau reanalysis
+        run: python code/kendall_tau_reanalysis.py
+
+      - name: Run historical comparison
+        run: python code/historical_comparison.py
+
+      - name: Verify kendall_tau_results.json was created
+        run: test -f data/kendall_tau_results.json
+
+  typescript-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
