@@ -1,0 +1,355 @@
+{
+  "datasets": {
+    "MMLU (Best Model Score)": {
+      "n": 10,
+      "time_range": [
+        2020.5,
+        2025.75
+      ],
+      "score_range": [
+        43.0,
+        91.4
+      ]
+    },
+    "GPQA Diamond (Best Model)": {
+      "n": 8,
+      "time_range": [
+        2023.83,
+        2026.17
+      ],
+      "score_range": [
+        39.0,
+        94.1
+      ]
+    },
+    "SWE-bench (Best Agent)": {
+      "n": 8,
+      "time_range": [
+        2023.83,
+        2026.08
+      ],
+      "score_range": [
+        1.96,
+        80.9
+      ]
+    },
+    "HumanEval (Best Model)": {
+      "n": 8,
+      "time_range": [
+        2021.5,
+        2025.42
+      ],
+      "score_range": [
+        28.8,
+        96.3
+      ]
+    },
+    "ARC-AGI-2 (Best System)": {
+      "n": 6,
+      "time_range": [
+        2025.0,
+        2026.17
+      ],
+      "score_range": [
+        2.5,
+        68.8
+      ]
+    },
+    "Cost: GPT-3.5 Equivalent ($/M tokens)": {
+      "n": 8,
+      "time_range": [
+        2022.83,
+        2025.75
+      ],
+      "score_range": [
+        0.02,
+        20.0
+      ]
+    },
+    "Training Compute (log10 FLOP)": {
+      "n": 9,
+      "time_range": [
+        2012.0,
+        2025.75
+      ],
+      "score_range": [
+        17.0,
+        26.5
+      ]
+    }
+  },
+  "model_fits": {
+    "MMLU (Best Model Score)": {
+      "models": {
+        "Linear": {
+          "r2": 0.8361468268083331,
+          "aic": 39.28534768190093,
+          "bic": 39.890517867889024
+        },
+        "Logarithmic": {
+          "r2": 0.942248675748995,
+          "aic": 28.857103066822404,
+          "bic": 29.462273252810498
+        },
+        "Exponential": {
+          "r2": 0.8361273422312236,
+          "aic": 41.2865367598003,
+          "bic": 42.194292038782436
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9586289193405967,
+          "aic": 29.521461287350494,
+          "bic": 30.731801659326678
+        }
+      },
+      "best_model": "Logarithmic"
+    },
+    "GPQA Diamond (Best Model)": {
+      "models": {
+        "Linear": {
+          "r2": 0.871903274105544,
+          "aic": 33.43589619549452,
+          "bic": 33.59477927885419
+        },
+        "Logarithmic": {
+          "r2": 0.9590992553663106,
+          "aic": 24.302797151424564,
+          "bic": 24.461680234784236
+        },
+        "Exponential": {
+          "r2": 0.8718862174499804,
+          "aic": 35.436961360585045,
+          "bic": 35.675285985624555
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9957373619982435,
+          "aic": 10.212716741652702,
+          "bic": 10.530482908372045
+        }
+      },
+      "best_model": "Logistic (S-curve)"
+    },
+    "SWE-bench (Best Agent)": {
+      "models": {
+        "Linear": {
+          "r2": 0.959180238136016,
+          "aic": 31.893034643496023,
+          "bic": 32.05191772685569
+        },
+        "Logarithmic": {
+          "r2": 0.9757746581593654,
+          "aic": 27.718898205003573,
+          "bic": 27.877781288363245
+        },
+        "Exponential": {
+          "r2": 0.9591692062814714,
+          "aic": 33.895196412911176,
+          "bic": 34.13352103795068
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9977004876712471,
+          "aic": 12.881280610848282,
+          "bic": 13.199046777567627
+        }
+      },
+      "best_model": "Logistic (S-curve)"
+    },
+    "HumanEval (Best Model)": {
+      "models": {
+        "Linear": {
+          "r2": 0.9592817084707937,
+          "aic": 28.3764550585999,
+          "bic": 28.53533814195957
+        },
+        "Logarithmic": {
+          "r2": 0.9871668100217907,
+          "aic": 19.139313996391376,
+          "bic": 19.29819707975105
+        },
+        "Exponential": {
+          "r2": 0.9592703473477983,
+          "aic": 30.378686888647096,
+          "bic": 30.617011513686602
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9875530710852386,
+          "aic": 22.894827091867953,
+          "bic": 23.212593258587297
+        }
+      },
+      "best_model": "Logarithmic"
+    },
+    "ARC-AGI-2 (Best System)": {
+      "models": {
+        "Linear": {
+          "r2": 0.9600646259952452,
+          "aic": 23.403969549697585,
+          "bic": 22.987488488153694
+        },
+        "Logarithmic": {
+          "r2": 0.919613710486725,
+          "aic": 27.60145636292798,
+          "bic": 27.18497530138409
+        },
+        "Exponential": {
+          "r2": 0.9700985875441699,
+          "aic": 23.66782887535726,
+          "bic": 23.043107283041422
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9951688236130317,
+          "aic": 14.730934542044299,
+          "bic": 13.89797241895652
+        }
+      },
+      "best_model": "Logistic (S-curve)"
+    },
+    "Cost: GPT-3.5 Equivalent ($/M tokens)": {
+      "models": {
+        "Linear": {
+          "r2": 0.780972101251236,
+          "aic": 36.65114248823146,
+          "bic": 36.810025571591126
+        },
+        "Logarithmic": {
+          "r2": 0.6208976550032763,
+          "aic": 41.03999924781339,
+          "bic": 41.19888233117306
+        },
+        "Exponential": {
+          "r2": 0.9963543728320764,
+          "aic": 5.885776887753729,
+          "bic": 6.124101512793236
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9998142596726501,
+          "aic": -15.929695779578758,
+          "bic": -15.611929612859415
+        }
+      },
+      "best_model": "Logistic (S-curve)"
+    },
+    "Training Compute (log10 FLOP)": {
+      "models": {
+        "Linear": {
+          "r2": 0.9750880327434425,
+          "aic": -8.73295300253662,
+          "bic": -8.338503847864182
+        },
+        "Logarithmic": {
+          "r2": 0.8276911317909906,
+          "aic": 8.672509797048672,
+          "bic": 9.066958951721112
+        },
+        "Exponential": {
+          "r2": 0.9751067180216711,
+          "aic": -6.739706006066617,
+          "bic": -6.148032274057959
+        },
+        "Logistic (S-curve)": {
+          "r2": 0.9917265727417264,
+          "aic": -14.653648115087538,
+          "bic": -13.86474980574266
+        }
+      },
+      "best_model": "Logistic (S-curve)"
+    }
+  },
+  "acceleration_tests": {
+    "MMLU (Best Model Score)": {
+      "n": 8,
+      "mean_acceleration": 1.6781241762738244,
+      "median_acceleration": -3.3579446706721945,
+      "t_statistic": 0.06884255779409974,
+      "p_value_one_sided": 0.4735201051179412,
+      "reject_H0_at_005": false,
+      "reject_H0_at_010": false,
+      "fraction_accelerating": 0.5,
+      "n_accelerating": 4,
+      "n_total": 8
+    },
+    "GPQA Diamond (Best Model)": {
+      "n": 6,
+      "mean_acceleration": -21.839408076466786,
+      "median_acceleration": -32.41379310345236,
+      "t_statistic": -1.1345619946688685,
+      "p_value_one_sided": 0.8459976335635606,
+      "reject_H0_at_005": false,
+      "reject_H0_at_010": false,
+      "fraction_accelerating": 0.16666666666666666,
+      "n_accelerating": 1,
+      "n_total": 6
+    },
+    "SWE-bench (Best Agent)": {
+      "n": 6,
+      "mean_acceleration": -10.170787414859506,
+      "median_acceleration": -25.774115873801648,
+      "t_statistic": -0.4134126458082242,
+      "p_value_one_sided": 0.6517813062672446,
+      "reject_H0_at_005": false,
+      "reject_H0_at_010": false,
+      "fraction_accelerating": 0.3333333333333333,
+      "n_accelerating": 2,
+      "n_total": 6
+    },
+    "HumanEval (Best Model)": {
+      "n": 6,
+      "mean_acceleration": -11.384138552985922,
+      "median_acceleration": -16.15074735261031,
+      "t_statistic": -1.3420435755258242,
+      "p_value_one_sided": 0.881351115246028,
+      "reject_H0_at_005": false,
+      "reject_H0_at_010": false,
+      "fraction_accelerating": 0.16666666666666666,
+      "n_accelerating": 1,
+      "n_total": 6
+    },
+    "ARC-AGI-2 (Best System)": {
+      "n": 4,
+      "mean_acceleration": 44.47619047619903,
+      "median_acceleration": 82.19607843142583,
+      "t_statistic": 0.45472324456124996,
+      "p_value_one_sided": 0.34009798189813845,
+      "reject_H0_at_005": false,
+      "reject_H0_at_010": false,
+      "fraction_accelerating": 0.75,
+      "n_accelerating": 3,
+      "n_total": 4
+    },
+    "Cost: GPT-3.5 Equivalent ($/M tokens)": {
+      "n": 6,
+      "mean_acceleration": 17.29121243234184,
+      "median_acceleration": 17.81875266557129,
+      "t_statistic": 3.5749225960875872,
+      "p_value_one_sided": 0.007980163887411318,
+      "reject_H0_at_005": true,
+      "reject_H0_at_010": true,
+      "fraction_accelerating": 1.0,
+      "n_accelerating": 6,
+      "n_total": 6
+    },
+    "Training Compute (log10 FLOP)": {
+      "n": 7,
+      "mean_acceleration": 0.09576428169534457,
+      "median_acceleration": -0.08205128205128205,
+      "t_statistic": 0.5093743416449258,
+      "p_value_one_sided": 0.3143380145114615,
+      "reject_H0_at_005": false,
+      "reject_H0_at_010": false,
+      "fraction_accelerating": 0.42857142857142855,
+      "n_accelerating": 3,
+      "n_total": 7
+    }
+  },
+  "fisher_combined": {
+    "chi2": 17.071498502212535,
+    "p_value": 0.2523877139973172,
+    "reject_H0_005": false
+  },
+  "charts": [
+    "/sessions/keen-exciting-curie/mnt/Documents/AI Singularity Research/Figure_1_Benchmark_Trajectories.png",
+    "/sessions/keen-exciting-curie/mnt/Documents/AI Singularity Research/Figure_2_Acceleration_Analysis.png",
+    "/sessions/keen-exciting-curie/mnt/Documents/AI Singularity Research/Figure_3_Normalized_Convergence.png",
+    "/sessions/keen-exciting-curie/mnt/Documents/AI Singularity Research/Figure_4_Statistical_Summary.png"
+  ]
+}
