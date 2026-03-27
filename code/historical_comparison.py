@@ -1,10 +1,12 @@
 """Generate historical comparison chart for the Evidence Package."""
+import os
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-OUT = "/sessions/keen-exciting-curie/mnt/Documents/AI Singularity Research"
+OUT = os.environ.get("SINGULARITY_OUT", os.path.join(os.path.dirname(__file__), "..", "data", "output"))
+os.makedirs(OUT, exist_ok=True)
 NAVY = '#1B2A4A'
 ACCENT = '#2E6BA6'
 GREEN = '#27AE60'

@@ -18,7 +18,7 @@ from matplotlib.gridspec import GridSpec
 import os, json, warnings
 warnings.filterwarnings('ignore')
 
-OUT = "/sessions/keen-exciting-curie/mnt/Documents/AI Singularity Research"
+OUT = os.environ.get("SINGULARITY_OUT", os.path.join(os.path.dirname(__file__), "..", "data", "output"))
 os.makedirs(OUT, exist_ok=True)
 
 # =====================================================================
