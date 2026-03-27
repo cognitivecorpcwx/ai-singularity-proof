@@ -16,7 +16,7 @@ All notable changes to this evidence package are documented here.
 - Adversarial Review #1: Independent statistical reanalysis using Kendall's tau (`docs/Independent_Adversarial_Review.md`)
 - Adversarial Review #2: S-curve fallacy and historical comparison critique (`docs/Adversarial_Review_2_S_Curve_Fallacy.md`)
 - Built Environment Lifecycle Impact Analysis: 14 stakeholders × 7 lifecycle phases (`docs/Built_Environment_Impact_Analysis.md`)
-- Singularity Tracker: Next.js live falsification dashboard (`singularity-tracker/`)
+- Singularity Tracker: Next.js live falsification dashboard (root-level `app/`, `lib/`, `components/`)
 - Expanded tracker with history, impact, and adversarial panel pages (root-level app)
 - Kendall's tau reproduction code (`code/kendall_tau_reanalysis.py`)
 - Data provenance log (`data/DATA_PROVENANCE.md`)
