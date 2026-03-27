@@ -1,0 +1,91 @@
+{
+  "technologies": [
+    {
+      "id": "electrification",
+      "name": "Electrification",
+      "startYear": 1882,
+      "endYear": 1940,
+      "durationYears": 58,
+      "metric": "US household adoption",
+      "milestones": [
+        { "year": 1882, "pct": 0, "label": "Pearl Street Station" },
+        { "year": 1900, "pct": 3, "label": "3% of households" },
+        { "year": 1910, "pct": 12, "label": "Urban spread" },
+        { "year": 1920, "pct": 35, "label": "WWI industrialization" },
+        { "year": 1930, "pct": 68, "label": "Rural electrification begins" },
+        { "year": 1940, "pct": 90, "label": "REA impact" }
+      ],
+      "speedRelativeToAI": "13x slower",
+      "note": "Physical infrastructure deployment — poles, wires, transformers to every household"
+    },
+    {
+      "id": "internet",
+      "name": "Internet Adoption",
+      "startYear": 1990,
+      "endYear": 2010,
+      "durationYears": 20,
+      "metric": "US household adoption",
+      "milestones": [
+        { "year": 1990, "pct": 0, "label": "WWW invented" },
+        { "year": 1995, "pct": 14, "label": "Netscape IPO" },
+        { "year": 2000, "pct": 43, "label": "Dot-com peak" },
+        { "year": 2005, "pct": 63, "label": "Broadband expansion" },
+        { "year": 2010, "pct": 78, "label": "Mobile internet" }
+      ],
+      "speedRelativeToAI": "6x slower",
+      "note": "Required ISP infrastructure, modems, broadband rollout"
+    },
+    {
+      "id": "smartphones",
+      "name": "Smartphone Adoption",
+      "startYear": 2007,
+      "endYear": 2018,
+      "durationYears": 11,
+      "metric": "US adult ownership",
+      "milestones": [
+        { "year": 2007, "pct": 0, "label": "iPhone launch" },
+        { "year": 2010, "pct": 21, "label": "Android expansion" },
+        { "year": 2012, "pct": 44, "label": "Majority adoption" },
+        { "year": 2015, "pct": 68, "label": "Default device" },
+        { "year": 2018, "pct": 85, "label": "Near-universal" }
+      ],
+      "speedRelativeToAI": "3x slower",
+      "note": "Hardware manufacturing + cellular network expansion"
+    },
+    {
+      "id": "ai_capability",
+      "name": "AI Capability (Benchmarks)",
+      "startYear": 2020,
+      "endYear": 2026,
+      "durationYears": 3,
+      "metric": "Normalized benchmark performance (10% to 90% of range)",
+      "milestones": [
+        { "year": 2020.5, "pct": 10, "label": "GPT-3" },
+        { "year": 2023.0, "pct": 50, "label": "GPT-4" },
+        { "year": 2024.5, "pct": 75, "label": "GPT-4o / Claude 3.5" },
+        { "year": 2025.5, "pct": 88, "label": "Frontier models" },
+        { "year": 2026.0, "pct": 93, "label": "Current best" }
+      ],
+      "speedRelativeToAI": "baseline",
+      "note": "Software test performance — NOT physical infrastructure deployment. Apples-to-oranges comparison acknowledged."
+    },
+    {
+      "id": "ai_enterprise",
+      "name": "Enterprise AI Adoption",
+      "startYear": 2017,
+      "endYear": 2025,
+      "durationYears": 8,
+      "metric": "Enterprise deployment rate",
+      "milestones": [
+        { "year": 2017, "pct": 20, "label": "Early adopters" },
+        { "year": 2019, "pct": 37, "label": "Pre-GPT growth" },
+        { "year": 2021, "pct": 50, "label": "COVID acceleration" },
+        { "year": 2023, "pct": 65, "label": "GenAI wave" },
+        { "year": 2025, "pct": 78, "label": "Mainstream adoption" }
+      ],
+      "speedRelativeToAI": "Real-world deployment",
+      "note": "Actual enterprise adoption — slower than benchmark capability maturation, consistent with adversarial critique"
+    }
+  ],
+  "caveat": "CRITICAL METHODOLOGICAL NOTE (Adversarial Review #2): Comparing software benchmark improvements to physical infrastructure deployment is a categorical mismatch. AI capability matured from 10% to 90% of its range in ~3 years, faster than any prior technology's capability curve. However, this measures software test performance, not physical deployment. Enterprise AI adoption (20% to 78% over 8 years) provides a more honest comparison point."
+}
