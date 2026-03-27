@@ -2,7 +2,7 @@
 
 **James Waddell | Cognitive Corp | March 2026**
 
-A multi-layered evidentiary package arguing that the AI singularity is not a future prediction but a present-tense description of the system we are living in. The argument is built across five independent layers of evidence, designed to meet the highest standard of scrutiny.
+A multi-layered evidentiary package arguing that the AI singularity is not a future prediction but a present-tense description of the system we are living in. The argument is built across six independent layers of evidence — five static documents and one live falsification engine — designed to meet the highest standard of scrutiny.
 
 ![Historical Comparison](figures/Figure_5_Historical_Comparison.png)
 
@@ -10,7 +10,7 @@ A multi-layered evidentiary package arguing that the AI singularity is not a fut
 
 ---
 
-## The Five Layers of Evidence
+## Six Layers of Evidence
 
 ### Layer 1: Narrative Argument
 **[The Singularity Is Not Coming. It Is Here.](docs/The_Singularity_Is_Here.docx)**
@@ -44,6 +44,11 @@ Three additional proof structures:
 | ![Fig 3](figures/Figure_3_Normalized_Convergence.png) | Normalized convergence across all domains |
 | ![Fig 4](figures/Figure_4_Statistical_Summary.png) | Statistical summary dashboard |
 | ![Fig 5](figures/Figure_5_Historical_Comparison.png) | Historical comparison: AI vs. prior transitions |
+
+### Layer 6: Live Falsification Engine
+**[Singularity Tracker](singularity-tracker/)**
+
+A Next.js dashboard that continuously tests the singularity thesis against incoming data. Each domain has an explicit falsification condition — add a new benchmark result, and the curve fits, acceleration tests, and Fisher's combined statistic recompute automatically. The tracker reimplements the Python analysis pipeline in TypeScript for live, browser-based re-analysis. See the [tracker's own README](singularity-tracker/README.md) for architecture, API docs, and setup instructions.
 
 ---
 
